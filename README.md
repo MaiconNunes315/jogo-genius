@@ -4,7 +4,7 @@
 ## Download
 
 ```sh
-git clone https://github.com/MaiconNunes315/Cron-metro.git
+git clone https://github.com/MaiconNunes315/jogo-genius.git
 ```
 
 ## Author
