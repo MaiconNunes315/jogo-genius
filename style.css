@@ -1,0 +1,175 @@
+@keyframes button-play{
+    70%{transform:translate(0,25px)}
+}
+
+@keyframes backgroundAlternated {
+    0% {background-color:rgba(255, 0, 0, 0.2);}
+    25% {background-color:rgba(0, 255, 0, 0.2)}
+    50% {background-color:rgba(0, 0, 255, 0.2)}
+    75% {background-color:rgba(255, 255, 0, 0.2);}
+}
+
+
+body{
+    margin: 0;
+    background-color:gray;
+}
+
+.page1{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    animation-name:backgroundAlternated;
+    animation-duration:8s;
+    background-color:rgba(255, 0, 0, 0.2);
+    animation-iteration-count:infinite;
+}
+
+.play{
+
+    animation-name: button-play;
+    animation-duration:1.5s;
+    animation-iteration-count:infinite;
+    width:200px;
+    height: 5vh;
+    margin-top:50px;
+    font-size: 25px;
+    font-family: 'Orbitron', sans-serif;;
+    background-color: rgb(40, 100, 214);
+    border-radius: 10px;
+    box-shadow: 4px 5px 10px gray;
+    
+}
+
+.play:hover{
+    opacity:0.6;
+    cursor:pointer;
+    transition:2s;
+}
+
+.page2{
+    text-align: center;
+    display: none;
+}
+
+h1{
+    font-size: 30px;
+}
+
+input{
+    font-size: 20px;
+    width: 430px;
+   padding: 30px 0;
+}
+
+
+
+.main-game{
+    height: 100vh;
+    width: 100vw;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle{
+    text-align: center;
+    color: white;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 100%;
+    display: inline;
+    position: absolute;
+    box-shadow: 0px 0px 70px black;
+   z-index: 1;
+   overflow: hidden;
+}
+.circle p{
+    line-height: 150px;
+    font-size: 25px;
+}
+
+.genius{
+    display: grid;
+    grid-template-areas: 'verde vermelho' 'amarelo azul' ;
+    grid-gap: 10px;
+    border: 10px solid black;
+    background-color: black;
+    border-radius: 100%;
+    width: 600px;
+    height: 600px;
+    overflow: hidden;
+    box-shadow: 0px 0px 50px black;
+    padding:50px;
+  
+}
+
+.blue, .red, .green, .yellow{
+    margin:20px;
+    border:solid 20px black;
+}
+
+.blue{
+    grid-area:azul;
+    background-color: blue;
+    
+    border-bottom-right-radius: 100%;
+    box-shadow: 0px 0px 10px blue;
+      
+}
+.red{
+    grid-area:vermelho;
+    background-color: red;
+    border-top-right-radius: 100% ;
+    box-shadow: 0px 0px 10px red;
+    
+}
+
+.selected{
+    opacity: 0.2;
+}
+
+
+
+.yellow{
+    grid-area:amarelo;
+    background-color: yellow;
+    border-bottom-left-radius: 100%;
+    box-shadow: 0px 0px 10px yellow;
+    
+}
+
+.green{
+    grid-area:verde;
+    background-color: green;
+    border-top-left-radius: 100%;
+    
+    box-shadow: 0px 0px 10px green;
+}
+
+#main-game-personalized{
+    display: flex;
+    margin-top: 50px;
+}
+
+
+.image1{
+    grid-area:azul;
+    border-bottom-right-radius: 100%;
+}
+.image2{
+    grid-area:vermelho;
+    border-top-right-radius: 100% ;
+}
+.image3{
+    grid-area:amarelo;
+    border-bottom-left-radius: 100%;
+}
+.image4{
+    grid-area:verde;
+    border-top-left-radius: 100%;
+    
+}
