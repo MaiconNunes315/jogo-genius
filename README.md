@@ -1,6 +1,9 @@
 <h1 align="center">Welcome project genius
 
 > 🦀 Criando seu jogo de memória estilo Genius. Projeto de criação do jogo genius, desafio criado pela Digital Innovation One.
+
+<a href="https://maiconnunes315.github.io/jogo-genius/">Jogar</a>
+
 ## Download
 
 ```sh
