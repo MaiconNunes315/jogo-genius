@@ -1,4 +1,4 @@
-<h1 align="center">Welcome project genius
+<h1 align="center">Welcome project genius</h1>
 
 > 🦀 Criando seu jogo de memória estilo Genius. Projeto de criação do jogo genius, desafio criado pela Digital Innovation One.
 
